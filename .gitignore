@@ -10,5 +10,9 @@
 *.log
 
 # Portfolio source masters (heavy / non-web originals — committed versions are web-optimized)
+# A página consome apenas assets/Portifolio/web/. Os originais ficam como masters locais.
 assets/Portifolio/day_vlog.mp4
 assets/Portifolio/comercial.mp4
+assets/Portifolio/IMG_*.jpg
+assets/Portifolio/*.png
+!assets/Portifolio/web/

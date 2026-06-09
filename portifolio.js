@@ -1,7 +1,8 @@
 (function () {
   "use strict";
 
-  var BASE = "assets/Portifolio/";
+  var BASE = "assets/Portifolio/";       // vídeos e posters (originais)
+  var IMG = "assets/Portifolio/web/";    // imagens otimizadas (WebP/JPG leves)
   var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   /* ------------------------------------------------------------------ *
@@ -18,7 +19,7 @@
       kicker: "Branding · Identidade de marca",
       title: "AML Reputacional",
       subtitle: "Conceito de presença social",
-      media: [BASE + "insta_aml.png"],
+      media: [IMG + "insta_aml.jpg"],
       ratio: "portrait",
       fit: "contain",
       body: [
@@ -148,7 +149,7 @@
       kicker: "Post único · Campanha de produto",
       title: "Askora: performance em outro nível",
       subtitle: "Anúncio com a interface em destaque",
-      media: [BASE + "1.sua performance em outro nível.png"],
+      media: [IMG + "askora-performance.jpg"],
       ratio: "portrait",
       body: [
         "Post de imagem única para a Askora, feito para converter. O título fala direto do benefício, as telas do próprio produto servem de prova e o fechamento liga a ferramenta ao resultado em vendas.",
@@ -160,7 +161,7 @@
       kicker: "Post único · Campanha de produto",
       title: "Askora: o jogo das vendas",
       subtitle: "Conceito visual e força de marca",
-      media: [BASE + "5. Podemos finalmente dizer que o Askora está mudando.png"],
+      media: [IMG + "askora-jogo-das-vendas.jpg"],
       ratio: "portrait",
       body: [
         "Peça conceitual que traduz a ideia de vendas em uma imagem de competição de alto nível, com o capacete em forma de troféu. A arte em 3D, o degradê vibrante e o texto em camadas criam um pôster que faz parar o feed.",
@@ -171,7 +172,7 @@
 
   function range(a, b) {
     var out = [];
-    for (var i = a; i <= b; i++) out.push(BASE + "IMG_" + i + ".jpg");
+    for (var i = a; i <= b; i++) out.push(IMG + "IMG_" + i + ".jpg");
     return out;
   }
 
@@ -234,7 +235,7 @@
     } else {
       var img = document.createElement("img");
       img.className = "media-el";
-      img.src = item.media[0];
+      img.dataset.src = item.media[0];
       img.alt = item.title;
       img.loading = "lazy";
       img.decoding = "async";
@@ -298,7 +299,7 @@
       var fig = document.createElement("figure");
       fig.className = "carousel-cell";
       var img = document.createElement("img");
-      img.src = src;
+      img.dataset.src = src;
       img.alt = item.title + ", quadro " + (idx + 1);
       img.loading = "lazy";
       img.decoding = "async";
@@ -377,6 +378,30 @@
    * ------------------------------------------------------------------ */
   var current = 0;
 
+  /* Carrega as imagens só quando a peça é relevante (atual ± vizinhas).
+     Evita disparar 24 requisições no boot — o maior ganho de performance. */
+  function loadImg(img) {
+    if (img.dataset.src) { img.src = img.dataset.src; delete img.dataset.src; }
+  }
+  function hydrate(i, eager) {
+    var s = slides[i];
+    if (!s || s._full) return;            // já carregou tudo: nada a fazer
+    var imgs = s.querySelectorAll("img[data-src]");
+    if (eager) {
+      // peça ativa: carrega a capa na hora e o resto logo depois (sem bloquear)
+      s._full = true;
+      if (imgs[0]) loadImg(imgs[0]);
+      if (imgs.length > 1) {
+        var rest = Array.prototype.slice.call(imgs, 1);
+        window.setTimeout(function () { rest.forEach(loadImg); }, 200);
+      }
+    } else if (!s._cover) {
+      // vizinha: só a capa, em segundo plano (permite upgrade depois)
+      s._cover = true;
+      if (imgs[0]) loadImg(imgs[0]);
+    }
+  }
+
   function render() {
     slides.forEach(function (s, i) {
       var rel = i - current;
@@ -389,6 +414,10 @@
       // pause any video not in view
       if (s._video && i !== current) { try { s._video.pause(); } catch (e) {} }
     });
+    // hidrata a peça atual (eager) e as vizinhas (capa apenas)
+    hydrate(current, true);
+    hydrate(current - 1, false);
+    hydrate(current + 1, false);
     dots.forEach(function (d, i) {
       d.classList.toggle("is-active", i === current);
       d.setAttribute("aria-selected", i === current ? "true" : "false");
