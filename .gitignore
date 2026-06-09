@@ -8,3 +8,7 @@
 
 # Logs
 *.log
+
+# Portfolio source masters (heavy / non-web originals — committed versions are web-optimized)
+assets/Portifolio/day_vlog.mp4
+assets/Portifolio/comercial.mp4

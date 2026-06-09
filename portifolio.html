@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Portfólio · Direção de conteúdo & design audiovisual</title>
+  <meta name="description" content="Portfólio de conteúdo audiovisual: branding, daily vlog e carrosséis editoriais. Estratégia, técnica e direção de arte." />
+  <meta name="theme-color" content="#050807" />
+  <meta name="robots" content="noindex, nofollow" />
+  <link rel="icon" href="assets/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="portifolio.css?v=2" />
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Intro / capa -->
+  <header class="intro" id="intro">
+    <div class="intro-inner">
+      <p class="intro-eyebrow">Portfólio · Direção de conteúdo</p>
+      <h1 class="intro-title">Não é só design.<br /><em>É estratégia que se vê.</em></h1>
+      <p class="intro-lead">
+        Uma seleção de conteúdos pensados peça a peça — da identidade visual à decisão
+        editorial de cada frame. Marca, narrativa e técnica de marketing no mesmo lugar.
+      </p>
+      <button class="intro-cta" type="button" id="enter">
+        <span>Ver o portfólio</span>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+    <div class="intro-meta">
+      <span id="intro-count">— peças</span>
+      <span>Use ← → ou as setas para navegar</span>
+    </div>
+  </header>
+
+  <!-- Deck de portfólio -->
+  <main class="deck" id="deck" aria-label="Portfólio" hidden>
+    <div class="deck-progress" aria-hidden="true"><span id="progress-bar"></span></div>
+
+    <button class="nav-arrow nav-prev" type="button" id="prev" aria-label="Peça anterior">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+    <button class="nav-arrow nav-next" type="button" id="next" aria-label="Próxima peça">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <div class="stage" id="stage"><!-- slides injected --></div>
+
+    <footer class="deck-footer">
+      <span class="deck-index"><b id="cur">01</b> / <span id="total">00</span></span>
+      <span class="deck-label" id="deck-label"></span>
+      <div class="deck-dots" id="dots" role="tablist" aria-label="Navegação entre peças"></div>
+    </footer>
+  </main>
+
+  <script src="portifolio.js?v=2"></script>
+</body>
+</html>
