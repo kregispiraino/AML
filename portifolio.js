@@ -17,12 +17,13 @@
       type: "single",
       kicker: "Branding · Identidade de marca",
       title: "AML Reputacional",
-      subtitle: "Concept de presença social",
+      subtitle: "Conceito de presença social",
       media: [BASE + "insta_aml.png"],
       ratio: "portrait",
+      fit: "contain",
       body: [
-        "Estudo de identidade visual desenhado especificamente para a AML — um perfil de Instagram construído do zero com a paleta, o logotipo e o tom institucional da marca, antes de uma única publicação ir ao ar.",
-        "O objetivo aqui não é \"postar\": é provar coerência de marca. Bio, destaques, grade e linguagem foram alinhados ao posicionamento de uma autoridade em risco reputacional — sóbrio, técnico e confiável. É o blueprint que garante que cada peça futura pareça parte do mesmo organismo."
+        "Antes de pensar em qualquer publicação, montei como ficaria o perfil da AML no Instagram. Usei a paleta, o logo e o tom da marca para mostrar, na prática, como ela apareceria nas redes.",
+        "A ideia foi provar coerência. Bio, destaques, grade e linguagem conversam entre si e sustentam o posicionamento de uma empresa de autoridade em risco reputacional: sóbria, séria e confiável. É a base que faz cada peça futura parecer parte do mesmo todo."
       ]
     },
 
@@ -31,13 +32,13 @@
       type: "video",
       kicker: "Audiovisual · Filme comercial",
       title: "Comercial +ritmo",
-      subtitle: "VT publicitário de marca",
+      subtitle: "Filme publicitário de marca",
       media: [BASE + "comercial_web.mp4"],
       poster: BASE + "comercial_poster.jpg",
       ratio: "landscape",
       body: [
-        "Filme comercial de marca: direção de fotografia cinematográfica, captação real, decupagem por planos e finalização com a assinatura visual da +ritmo. É a peça de topo de funil — feita para construir percepção, não apenas para informar.",
-        "Cada decisão é técnica: profundidade de campo que isola o gesto (o aperto de mãos), lettering em movimento sincronizado ao ritmo do corte, colorização que dá unidade à marca e um fecho que fixa a assinatura. É o formato que comunica porte e confiança em poucos segundos — o tipo de produção que separa marca de anúncio."
+        "Um filme de marca para a +ritmo, com captação real, fotografia cuidada e finalização que fecha com a assinatura da empresa. É o tipo de peça feita para construir percepção, não só para explicar um produto.",
+        "Tudo aqui é decisão de direção. A profundidade de campo isola o aperto de mãos, o texto entra no ritmo do corte e a cor dá unidade à imagem. Em poucos segundos, o vídeo comunica porte e confiança. É o que separa uma marca de um anúncio qualquer."
       ]
     },
 
@@ -51,8 +52,8 @@
       poster: BASE + "day_vlog_poster.jpg",
       ratio: "portrait",
       body: [
-        "O daily é o formato que humaniza a marca. Enquanto o post institucional comunica autoridade, o vlog diário mostra o processo, o bastidor e a pessoa por trás — gerando o tipo de proximidade que constrói confiança ao longo do tempo.",
-        "Tecnicamente, ele alimenta o algoritmo com frequência e tempo de visualização: ritmo de corte rápido, gancho nos primeiros segundos e continuidade narrativa que faz o espectador voltar todo dia. É retenção e recorrência transformadas em hábito de audiência — a base de qualquer comunidade engajada."
+        "O daily é o formato que aproxima as pessoas da marca. Enquanto o post institucional passa autoridade, o vlog mostra o bastidor, o processo e quem está por trás. É assim que se constrói confiança com o tempo.",
+        "Por trás da leveza tem técnica. O corte é ágil, os primeiros segundos prendem a atenção e a história tem continuidade de um dia para o outro, o que faz a pessoa querer voltar. Frequência e recorrência viram hábito, e hábito é o que sustenta uma comunidade de verdade."
       ]
     },
 
@@ -61,13 +62,13 @@
       type: "video",
       kicker: "Audiovisual · Animação 2D",
       title: "Animação narrativa",
-      subtitle: "Storytelling ilustrado em motion",
+      subtitle: "História ilustrada em movimento",
       media: [BASE + "animacao.mp4"],
       poster: BASE + "animacao_poster.jpg",
       ratio: "portrait",
       body: [
-        "Conteúdo em animação 2D ilustrada: personagens com identidade própria, cenários ricos e narrativa conduzida quadro a quadro. O formato animado remove as limitações da captação real — qualquer cena, época ou metáfora vira possível, com controle total de direção de arte.",
-        "É a peça que prende a atenção pela curiosidade visual e sustenta a retenção pela história. Animação bem dirigida combina o melhor de dois mundos: o impacto estético de um frame ilustrado e o engajamento de uma narrativa que o espectador quer ver até o fim."
+        "Conteúdo em animação 2D, com personagens próprios, cenários ricos e uma história contada quadro a quadro. A grande vantagem da animação é a liberdade: qualquer cena, época ou ideia vira possível, com controle total sobre cada detalhe da arte.",
+        "É um formato que chama atenção pelo visual e segura quem está assistindo pela história. Quando bem feita, a animação junta o melhor dos dois lados: a beleza de um desenho e o envolvimento de uma narrativa que dá vontade de ver até o fim."
       ]
     },
 
@@ -76,12 +77,12 @@
       type: "carousel",
       kicker: "Carrossel · Conteúdo de vendas",
       title: "As perguntas secretas de uma negociação",
-      subtitle: "Storytelling editorial em 6 quadros",
+      subtitle: "História em 6 quadros",
       media: range(9602, 9607),
       ratio: "portrait",
       body: [
-        "Carrossel construído como uma micro-jornada: capa de alto impacto que abre um loop de curiosidade, desenvolvimento quadro a quadro e um encerramento que entrega valor real sobre técnica de negociação.",
-        "Cada deslize é desenhado para sustentar a atenção — direção de arte cósmica, hierarquia tipográfica forte e perguntas-âncora que puxam o leitor para o próximo card. É o formato que mais gera salvamentos e tempo de permanência no feed, exatamente porque ensina enquanto entretém."
+        "Pensei esse carrossel como uma pequena jornada. A capa abre com uma promessa que desperta curiosidade, os quadros do meio desenvolvem a ideia e o último entrega algo útil de verdade sobre negociação.",
+        "Cada tela foi feita para você querer ver a próxima. A arte com clima cósmico, os títulos fortes e as perguntas no caminho seguram a atenção. É justamente o tipo de conteúdo que mais gera salvamentos, porque ensina enquanto entretém."
       ]
     },
 
@@ -90,12 +91,12 @@
       type: "carousel",
       kicker: "Carrossel · Educação comercial",
       title: "3 estratégias que todo comercial deve conhecer",
-      subtitle: "Conteúdo de marca com glossário",
+      subtitle: "Conteúdo educativo de marca",
       media: range(9608, 9612),
       ratio: "square",
       body: [
-        "Peça educativa para a marca The Code Brasil: traduz conceitos comerciais — como cross selling — em definições limpas e memoráveis, num formato que posiciona a marca como referência técnica no assunto.",
-        "A estrutura é estratégica: capa com promessa numérica clara (\"3 estratégias\"), cards de conceito com consistência visual e um quadro final de conversão que convida ao contato. Conteúdo que educa, gera autoridade e termina pedindo a ação — sem soar como anúncio."
+        "Peça educativa para a The Code Brasil. Ela explica conceitos comerciais, como cross selling, de um jeito simples e fácil de lembrar, e coloca a marca no lugar de quem entende do assunto.",
+        "A montagem tem um caminho claro. A capa promete \"3 estratégias\", os quadros mantêm a mesma identidade visual e o último convida ao contato. É um conteúdo que ensina, gera autoridade e ainda chama para a ação, sem soar como propaganda."
       ]
     },
 
@@ -103,13 +104,13 @@
     {
       type: "carousel",
       kicker: "Carrossel · Educação financeira",
-      title: "E agora? — quando o dinheiro acaba",
-      subtitle: "Dor, identificação e solução",
+      title: "E agora? Quando o dinheiro acaba",
+      subtitle: "Da dor à solução",
       media: range(9618, 9621),
       ratio: "portrait",
       body: [
-        "Carrossel da ManyFi que abre pela dor — \"você está na metade do mês e o dinheiro acabou\" — para criar identificação imediata antes de apresentar qualquer solução. Clássico framework problema → agitação → solução aplicado ao feed.",
-        "A composição mistura recortes editoriais, anotações manuscritas e o beija-flor como elemento de marca, equilibrando leveza e credibilidade. O percurso conduz naturalmente do reconhecimento do problema ao CTA, com o tom emocional certo para um tema sensível como finanças pessoais."
+        "Carrossel da ManyFi que começa pela dor. \"Você está na metade do mês e o dinheiro acabou\" é a primeira frase, e ela cria identificação na hora, antes de qualquer solução aparecer.",
+        "A composição mistura recortes, anotações à mão e o beija-flor da marca, equilibrando leveza e credibilidade. O leitor vai do reconhecer o problema até o convite para agir de um jeito natural, com o tom certo para um tema delicado como dinheiro."
       ]
     },
 
@@ -118,12 +119,12 @@
       type: "carousel",
       kicker: "Carrossel · Educação financeira",
       title: "3 passos para economizar",
-      subtitle: "Conteúdo listável e prático",
+      subtitle: "Conteúdo prático em lista",
       media: range(9622, 9626),
       ratio: "portrait",
       body: [
-        "Formato em lista numerada — o tipo de conteúdo com maior taxa de salvamento, porque o leitor guarda para aplicar depois. Cada passo é um quadro autônomo, com numeração gigante que ancora a leitura e cria ritmo de progressão.",
-        "A direção de arte sofisticada (a chave dourada sob foco, fundo cinematográfico) eleva um tema cotidiano a algo aspiracional. É a prova de que educação financeira não precisa parecer planilha: pode ter desejo, estética e clareza ao mesmo tempo."
+        "Conteúdo em lista numerada, que costuma ser dos mais salvos, porque a pessoa guarda para aplicar depois. Cada passo ocupa um quadro só, com um número grande que organiza a leitura e dá ritmo de avanço.",
+        "A arte caprichada, com a chave dourada em foco e o fundo cinematográfico, transforma um tema do dia a dia em algo desejável. É a prova de que falar de dinheiro não precisa ter cara de planilha: dá para ter estética, clareza e desejo ao mesmo tempo."
       ]
     },
 
@@ -131,13 +132,13 @@
     {
       type: "carousel",
       kicker: "Carrossel · Lançamento de produto",
-      title: "BiblioZap — o que eu sou?",
-      subtitle: "Apresentação de marca em primeira pessoa",
+      title: "BiblioZap: o que eu sou?",
+      subtitle: "Apresentação em primeira pessoa",
       media: range(9627, 9630),
       ratio: "portrait",
       body: [
-        "Carrossel de apresentação que dá voz própria ao produto: a IA fala em primeira pessoa (\"o que eu sou?\"), uma escolha de copy que transforma a explicação de uma ferramenta em uma conversa — muito mais envolvente que um manual.",
-        "Tipografia ousada em escala máxima, paleta de alto contraste e progressão de revelação card a card. Une branding forte e clareza de proposta de valor: ao fim, o leitor entende exatamente o que o BiblioZap faz e por que deveria usá-lo no WhatsApp."
+        "Carrossel de apresentação em que o próprio produto fala. A IA se apresenta na primeira pessoa, perguntando \"o que eu sou?\", e isso transforma a explicação de uma ferramenta em uma conversa, bem mais interessante que um manual.",
+        "Tipografia grande, cores de bastante contraste e cada quadro revelando um pouco mais. No fim, o leitor entende exatamente o que o BiblioZap faz e por que vale a pena usar no WhatsApp, com a marca bem marcada do começo ao fim."
       ]
     },
 
@@ -145,25 +146,25 @@
     {
       type: "single",
       kicker: "Post único · Campanha de produto",
-      title: "Askora — performance em outro nível",
-      subtitle: "Anúncio de produto com UI em destaque",
+      title: "Askora: performance em outro nível",
+      subtitle: "Anúncio com a interface em destaque",
       media: [BASE + "1.sua performance em outro nível.png"],
       ratio: "portrait",
       body: [
-        "Post de imagem única para a Askora, focado em conversão: headline de benefício direto, mockups da própria interface como prova visual e um fechamento que conecta o produto ao resultado comercial.",
-        "Quando bem dirigida, uma peça estática vende tanto quanto um vídeo — desde que cada elemento trabalhe a favor da leitura. Aqui, luz, profundidade e hierarquia conduzem o olhar do título ao CTA em poucos segundos."
+        "Post de imagem única para a Askora, feito para converter. O título fala direto do benefício, as telas do próprio produto servem de prova e o fechamento liga a ferramenta ao resultado em vendas.",
+        "Uma peça parada pode vender tanto quanto um vídeo, desde que cada elemento ajude a leitura. Aqui, a luz, a profundidade e a organização das informações levam o olhar do título até o convite final em poucos segundos."
       ]
     },
     {
       type: "single",
       kicker: "Post único · Campanha de produto",
-      title: "Askora — o jogo das vendas",
+      title: "Askora: o jogo das vendas",
       subtitle: "Conceito visual e força de marca",
       media: [BASE + "5. Podemos finalmente dizer que o Askora está mudando.png"],
       ratio: "portrait",
       body: [
-        "Peça conceitual que traduz \"vendas\" em uma metáfora visual de competição de alto rendimento — o capacete em troféu. Direção de arte 3D, gradiente vibrante e tipografia em camadas criam um pôster que para o scroll.",
-        "É a peça que constrói desejo e território de marca antes de pedir qualquer coisa. Comunica ambição e modernidade num único frame, reforçando o posicionamento da Askora como produto que muda o jogo."
+        "Peça conceitual que traduz a ideia de vendas em uma imagem de competição de alto nível, com o capacete em forma de troféu. A arte em 3D, o degradê vibrante e o texto em camadas criam um pôster que faz parar o feed.",
+        "É a peça que cria desejo e fortalece a marca antes de pedir qualquer coisa. Em uma única imagem, passa ambição e modernidade, e reforça a Askora como o produto que muda o jogo."
       ]
     }
   ];
@@ -215,6 +216,7 @@
 
     var frame = document.createElement("div");
     frame.className = "media-frame";
+    if (item.fit === "contain") frame.classList.add("is-contain");
 
     if (item.type === "video") {
       var vid = document.createElement("video");
@@ -297,7 +299,7 @@
       fig.className = "carousel-cell";
       var img = document.createElement("img");
       img.src = src;
-      img.alt = item.title + " — quadro " + (idx + 1);
+      img.alt = item.title + ", quadro " + (idx + 1);
       img.loading = "lazy";
       img.decoding = "async";
       img.draggable = false;

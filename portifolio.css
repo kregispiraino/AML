@@ -167,6 +167,14 @@ body {
 .media-el { display: block; width: 100%; height: 100%; object-fit: cover; }
 video.media-el { object-fit: contain; background: #000; }
 
+/* peça que deve aparecer por inteiro (ex.: print de feed) */
+.media-frame.is-contain {
+  background:
+    radial-gradient(120% 90% at 50% 0%, rgba(255, 255, 255, 0.05), transparent 70%),
+    #0b0f0e;
+}
+.media-frame.is-contain .media-el { object-fit: contain; }
+
 /* ---- inner carousel ---- */
 .carousel { position: relative; width: 100%; height: 100%; }
 .carousel-viewport { width: 100%; height: 100%; overflow: hidden; }
